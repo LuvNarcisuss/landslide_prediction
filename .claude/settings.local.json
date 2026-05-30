@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 *)",
+      "Bash(py -3 -c \"import openpyxl; print\\('openpyxl ok'\\)\")",
+      "Bash(python -c \"import openpyxl; print\\('openpyxl ok'\\)\")",
+      "Bash(python *)",
+      "Bash(pip show *)",
+      "Skill(playwright-cli)"
+    ]
+  }
+}

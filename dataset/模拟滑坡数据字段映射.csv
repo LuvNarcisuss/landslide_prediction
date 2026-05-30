@@ -1,0 +1,18 @@
+字段名,含义
+lat,纬度坐标
+lon,经度坐标
+event_date,滑坡发生时间
+elevation,海拔 (m)
+slope,坡度 (°)
+aspect,坡向 (0-360°，代表山坡朝向。)
+ndvi,植被覆盖指数(范围?-0.6 到 0.9+。负值通常代表水体或裸岩。)
+ndwi,水体指数
+landuse,土地利用类型
+distance_to_river,距河流距离
+tpi,地形位置指数(负值代表山谷/低洼处，正值代表山脊。)
+rain_3d,前3天降雨量
+rain_7d,前7天降雨量
+rain_30d,前30天降雨量
+api,前期降水指数
+label,是否发生滑坡
+source_flag,数据来源

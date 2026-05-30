@@ -1,0 +1,914 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - heading "菜鸟教程 -- 学的不仅是技术，更是梦想！" [level=1] [ref=e5]:
+      - link "菜鸟教程 -- 学的不仅是技术，更是梦想！" [ref=e6] [cursor=pointer]:
+        - /url: /
+    - generic: 
+    - textbox "搜索……" [ref=e10]
+  - navigation "主导航" [ref=e11]:
+    - generic [ref=e13]:
+      - list [ref=e14]:
+        - listitem [ref=e15]:
+          - link "首页" [ref=e16] [cursor=pointer]:
+            - /url: //www.runoob.com/
+        - listitem [ref=e17]:
+          - link "HTML" [ref=e18] [cursor=pointer]:
+            - /url: /html/html-tutorial.html
+        - listitem [ref=e19]:
+          - link "JavaScript" [ref=e20] [cursor=pointer]:
+            - /url: /js/js-tutorial.html
+        - listitem [ref=e21]:
+          - link "CSS" [ref=e22] [cursor=pointer]:
+            - /url: /css/css-tutorial.html
+        - listitem [ref=e23]:
+          - link "Vue" [ref=e24] [cursor=pointer]:
+            - /url: javascript:void(0);
+        - listitem [ref=e25]:
+          - link "React" [ref=e26] [cursor=pointer]:
+            - /url: /react/react-tutorial.html
+        - listitem [ref=e27]:
+          - link "Python3" [ref=e28] [cursor=pointer]:
+            - /url: /python3/python3-tutorial.html
+        - listitem [ref=e29]:
+          - link "Java" [ref=e30] [cursor=pointer]:
+            - /url: /java/java-tutorial.html
+        - listitem [ref=e31]:
+          - link "C" [ref=e32] [cursor=pointer]:
+            - /url: /cprogramming/c-tutorial.html
+        - listitem [ref=e33]:
+          - link "C++" [ref=e34] [cursor=pointer]:
+            - /url: /cplusplus/cpp-tutorial.html
+        - listitem [ref=e35]:
+          - link "C#" [ref=e36] [cursor=pointer]:
+            - /url: /csharp/csharp-tutorial.html
+        - listitem [ref=e37]:
+          - link "AI" [ref=e38] [cursor=pointer]:
+            - /url: javascript:void(0);
+        - listitem [ref=e39]:
+          - link "Go" [ref=e40] [cursor=pointer]:
+            - /url: /go/go-tutorial.html
+        - listitem [ref=e41]:
+          - link "SQL" [ref=e42] [cursor=pointer]:
+            - /url: /sql/sql-tutorial.html
+        - listitem [ref=e43]:
+          - link "Linux" [ref=e44] [cursor=pointer]:
+            - /url: /linux/linux-tutorial.html
+        - listitem [ref=e45]:
+          - link "VS Code" [ref=e46] [cursor=pointer]:
+            - /url: /vscode/vscode-tutorial.html
+        - listitem [ref=e47]:
+          - link "Bootstrap" [ref=e48] [cursor=pointer]:
+            - /url: javascript:void(0);
+        - listitem [ref=e49]:
+          - link "Git" [ref=e50] [cursor=pointer]:
+            - /url: /git/git-tutorial.html
+        - listitem [ref=e51]:
+          - link "本地书签" [ref=e52] [cursor=pointer]:
+            - /url: /browser-history
+        - listitem [ref=e53]:
+          - button "切换暗色模式" [ref=e54] [cursor=pointer]:
+            - generic [ref=e55]: 
+          - text: 
+      - text:  
+  - text:            
+  - generic [ref=e57]:
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - generic [ref=e61]: 
+        - text: Claude Code 教程
+      - generic [ref=e63]:
+        - link "Claude Code 教程" [ref=e64] [cursor=pointer]:
+          - /url: /claude-code/claude-code-tutorial.html
+        - link "Claude Code 简介" [ref=e65] [cursor=pointer]:
+          - /url: /claude-code/claude-code-intro.html
+        - link "Claude Code 安装与使用" [ref=e66] [cursor=pointer]:
+          - /url: /claude-code/claude-code-install.html
+        - link "Claude Code 如何工作" [ref=e67] [cursor=pointer]:
+          - /url: /claude-code/claude-code-how-it-work.html
+        - link "Claude Code API 配置" [ref=e68] [cursor=pointer]:
+          - /url: /claude-code/claude-code-setup.html
+        - link "Claude Code DeepSeek" [ref=e69] [cursor=pointer]:
+          - /url: /claude-code/claude-code-deepseek.html
+        - link "Coding Plan" [ref=e70] [cursor=pointer]:
+          - /url: /claude-code/coding-plan.html
+        - link "Claude Code 第一次使用" [ref=e71] [cursor=pointer]:
+          - /url: /claude-code/claude-code-first-demo.html
+        - link "VS Code Claude Code" [ref=e72] [cursor=pointer]:
+          - /url: /claude-code/vscode-install-claude-code.html
+        - link "JetBrains Claude Code" [ref=e73] [cursor=pointer]:
+          - /url: /claude-code/claude-code-jetbrains.html
+        - link "Claude Code 项目初始化" [ref=e74] [cursor=pointer]:
+          - /url: /claude-code/claude-code-init.html
+        - link "Claude Code 项目结构" [ref=e75] [cursor=pointer]:
+          - /url: /claude-code/claude-code-project.html
+        - link "Claude Code 交互模式" [ref=e76] [cursor=pointer]:
+          - /url: /claude-code/claude-code-cli.html
+        - link "Claude Code 操作说明" [ref=e77] [cursor=pointer]:
+          - /url: /claude-code/claude-code-symbols.html
+        - link "Claude Code 基础用法" [ref=e78] [cursor=pointer]:
+          - /url: /claude-code/claude-code-basic.html
+        - link "CLAUDE.md 使用指南" [ref=e79] [cursor=pointer]:
+          - /url: /claude-code/claude-code-claudemd.html
+          - generic [ref=e80]: 
+          - text: CLAUDE.md 使用指南
+        - link "Claude Code 上下文管理" [ref=e81] [cursor=pointer]:
+          - /url: /claude-code/claude-code-context.html
+        - link "Claude Code 权限配置" [ref=e82] [cursor=pointer]:
+          - /url: /claude-code/claude-code-permission.html
+        - link "Claude Code MCP" [ref=e83] [cursor=pointer]:
+          - /url: /claude-code/claude-code-mcp.html
+        - link "Claude Code 子代理" [ref=e84] [cursor=pointer]:
+          - /url: /claude-code/claude-code-subagent.html
+        - link "Claude Code 插件" [ref=e85] [cursor=pointer]:
+          - /url: /claude-code/claude-code-plugins.html
+        - link "Claude Code 记忆系统" [ref=e86] [cursor=pointer]:
+          - /url: /claude-code/claude-code-memory.html
+        - link "Agent Skills" [ref=e87] [cursor=pointer]:
+          - /url: /claude-code/claude-agent-skills.html
+        - link "Skills 使用实例" [ref=e88] [cursor=pointer]:
+          - /url: /claude-code/claude-code-ui-ux-pro-max-skill.html
+        - link "skill-creator 使用" [ref=e89] [cursor=pointer]:
+          - /url: /claude-code/skill-creator-usage.html
+        - link "Claude Code 输出样式" [ref=e90] [cursor=pointer]:
+          - /url: /claude-code/claude-code-outputstyles.html
+        - link "Claude Code 钩子" [ref=e91] [cursor=pointer]:
+          - /url: /claude-code/claude-code-hooks.html
+        - link "Claude Code CLI 参考手册" [ref=e92] [cursor=pointer]:
+          - /url: /claude-code/claude-code-cli-ref.html
+        - link "Claude Code 控制与模式" [ref=e93] [cursor=pointer]:
+          - /url: /claude-code/claude-code-control.html
+        - link "Claude Code 斜杠 / 命令" [ref=e94] [cursor=pointer]:
+          - /url: /claude-code/claude-code-slash-commands.html
+        - link "Claude Code 检查点" [ref=e95] [cursor=pointer]:
+          - /url: /claude-code/claude-code-checkpointing.html
+        - link "Claude Code 插件参考手册" [ref=e96] [cursor=pointer]:
+          - /url: /claude-code/claude-code-plugin-ref.html
+        - link "Claude Code 实战" [ref=e97] [cursor=pointer]:
+          - /url: /claude-code/claude-code-practical.html
+        - link "Claude Code Chrome" [ref=e98] [cursor=pointer]:
+          - /url: /claude-code/claude-code-chrome.html
+        - link "Claude Code 并行任务" [ref=e99] [cursor=pointer]:
+          - /url: /claude-code/claude-code-parallel-tasks.html
+        - link "Claude Code 环境变量" [ref=e100] [cursor=pointer]:
+          - /url: /claude-code/claude-code-env.html
+        - link "Claude Code Git 工作流" [ref=e101] [cursor=pointer]:
+          - /url: /claude-code/claude-code-git-workflow.html
+        - link "Claude Code GitHub Actions" [ref=e102] [cursor=pointer]:
+          - /url: /claude-code/claude-code-github-actions.html
+        - link "Claude Agent SDK" [ref=e103] [cursor=pointer]:
+          - /url: /claude-code/claude-agent-sdk.html
+        - link "Claude Code 开发配置" [ref=e104] [cursor=pointer]:
+          - /url: /claude-code/claude-code-devsetup.html
+        - link "Claude Code 制作视频" [ref=e105] [cursor=pointer]:
+          - /url: /claude-code/claude-code-remotion-best-practices.html
+        - link "Claude Code 实战" [ref=e106] [cursor=pointer]:
+          - /url: /claude-code/claude-code-todo.html
+    - generic [ref=e108]:
+      - generic [ref=e109]:
+        - generic [ref=e110]:
+          - link [ref=e111] [cursor=pointer]:
+            - /url: https://www.runoob.com/claude-code/claude-code-basic.html
+            - generic [ref=e112]: 
+          - link "Claude Code 基础用法" [ref=e113] [cursor=pointer]:
+            - /url: https://www.runoob.com/claude-code/claude-code-basic.html
+        - generic [ref=e114]:
+          - link "Claude Code 上下文管理" [ref=e115] [cursor=pointer]:
+            - /url: https://www.runoob.com/claude-code/claude-code-context.html
+          - link [ref=e116] [cursor=pointer]:
+            - /url: https://www.runoob.com/claude-code/claude-code-context.html
+            - generic [ref=e117]: 
+      - insertion [ref=e119]:
+        - generic [ref=e121]:
+          - generic "这些是与文章相关且您可能感兴趣的主题" [ref=e122]: 深入探索
+          - link "Markdown 教程" [ref=e123] [cursor=pointer]:
+            - img [ref=e125]
+            - text: Markdown 教程
+          - link "团队协作工具" [ref=e127] [cursor=pointer]:
+            - img [ref=e129]
+            - text: 团队协作工具
+          - link "database" [ref=e131] [cursor=pointer]:
+            - img [ref=e133]
+            - text: database
+          - link "AI编程助手" [ref=e135] [cursor=pointer]:
+            - img [ref=e137]
+            - text: AI编程助手
+          - link "DATABASE" [ref=e139] [cursor=pointer]:
+            - img [ref=e141]
+            - text: DATABASE
+          - link "开放源代码" [ref=e143] [cursor=pointer]:
+            - img [ref=e145]
+            - text: 开放源代码
+          - link "计算机科学" [ref=e147] [cursor=pointer]:
+            - img [ref=e149]
+            - text: 计算机科学
+          - link "编程" [ref=e151] [cursor=pointer]:
+            - img [ref=e153]
+            - text: 编程
+          - link "机器学习与人工智能" [ref=e155] [cursor=pointer]:
+            - img [ref=e157]
+            - text: 机器学习与人工智能
+      - generic [ref=e160]:
+        - heading "CLAUDE.md 使用指南" [level=1] [ref=e161]
+        - paragraph [ref=e162]:
+          - code [ref=e163]: CLAUDE.md
+          - text: 是 Claude Code 中最重要的配置文件，用于向 Claude 传递项目级别的持久指令。每次启动 Claude Code 会话时，它都会自动读取并加载这个文件中的内容，作为系统级上下文融入每一次对话中。
+        - paragraph [ref=e164]:
+          - text: 通俗地说，
+          - code [ref=e165]: CLAUDE.md
+          - text: 就是你在项目中给 Claude 写的一份工作手册——告诉它这个项目是什么、遵循什么规范、有哪些注意事项，让它每次都能以符合项目要求的方式工作，而不是每次对话都重新解释。
+        - separator [ref=e166]
+        - heading "CLAUDE.md 的作用" [level=2] [ref=e167]
+        - paragraph [ref=e168]:
+          - text: 没有
+          - code [ref=e169]: CLAUDE.md
+          - text: 时，Claude 每次都从零开始理解你的项目，你需要反复告诉它：用哪个包管理器、代码风格是什么、测试怎么跑、哪些文件不要动……有了
+          - code [ref=e170]: CLAUDE.md
+          - text: ，这些信息只需写一次，Claude 每次都会遵守。
+        - paragraph [ref=e171]:
+          - text: 具体来说，
+          - code [ref=e172]: CLAUDE.md
+          - text: 可以帮你做到以下几件事：
+        - list [ref=e173]:
+          - listitem [ref=e174]:
+            - strong [ref=e175]: 统一团队行为
+            - text: ：将文件提交到 git，所有团队成员使用 Claude Code 时都遵循相同的规范
+          - listitem [ref=e176]:
+            - strong [ref=e177]: 减少重复沟通
+            - text: ：项目约定、架构规则、禁止事项只写一次，永久生效
+          - listitem [ref=e178]:
+            - strong [ref=e179]: 降低出错概率
+            - text: ：明确告知 Claude 哪些操作有风险，避免它做出错误的决策
+          - listitem [ref=e180]:
+            - strong [ref=e181]: 加速 AI 理解
+            - text: ：帮助 Claude 快速定位关键文件和理解项目结构，减少不必要的文件探索
+        - separator [ref=e182]
+        - heading "文件放置位置" [level=2] [ref=e183]
+        - paragraph [ref=e184]:
+          - text: Claude Code 会从多个位置加载
+          - code [ref=e185]: CLAUDE.md
+          - text: ，不同位置的文件作用范围不同：
+        - table [ref=e186]:
+          - rowgroup [ref=e187]:
+            - row "位置 路径 作用范围 是否提交 git" [ref=e188]:
+              - columnheader "位置" [ref=e189]
+              - columnheader "路径" [ref=e190]
+              - columnheader "作用范围" [ref=e191]
+              - columnheader "是否提交 git" [ref=e192]
+          - rowgroup [ref=e193]:
+            - 'row "项目根目录 {项目根目录}/CLAUDE.md 当前项目所有会话 ✅ 推荐提交，团队共享" [ref=e194]':
+              - cell "项目根目录" [ref=e195]:
+                - strong [ref=e196]: 项目根目录
+              - 'cell "{项目根目录}/CLAUDE.md" [ref=e197]':
+                - code [ref=e198]: "{项目根目录}/CLAUDE.md"
+              - cell "当前项目所有会话" [ref=e199]
+              - cell "✅ 推荐提交，团队共享" [ref=e200]
+            - 'row "项目本地 {项目根目录}/.claude/CLAUDE.md 当前项目所有会话 ❌ 加入 .gitignore，仅个人使用" [ref=e201]':
+              - cell "项目本地" [ref=e202]:
+                - strong [ref=e203]: 项目本地
+              - 'cell "{项目根目录}/.claude/CLAUDE.md" [ref=e204]':
+                - code [ref=e205]: "{项目根目录}/.claude/CLAUDE.md"
+              - cell "当前项目所有会话" [ref=e206]
+              - cell "❌ 加入 .gitignore，仅个人使用" [ref=e207]
+            - 'row "子目录 {任意子目录}/CLAUDE.md Claude 打开该目录下的文件时自动加载 ✅ 适合多模块仓库" [ref=e208]':
+              - cell "子目录" [ref=e209]:
+                - strong [ref=e210]: 子目录
+              - 'cell "{任意子目录}/CLAUDE.md" [ref=e211]':
+                - code [ref=e212]: "{任意子目录}/CLAUDE.md"
+              - cell "Claude 打开该目录下的文件时自动加载" [ref=e213]
+              - cell "✅ 适合多模块仓库" [ref=e214]
+            - row "全局用户级 ~/.claude/CLAUDE.md 当前用户的所有项目 ❌ 个人配置，不提交" [ref=e215]:
+              - cell "全局用户级" [ref=e216]:
+                - strong [ref=e217]: 全局用户级
+              - cell "~/.claude/CLAUDE.md" [ref=e218]:
+                - code [ref=e219]: ~/.claude/CLAUDE.md
+              - cell "当前用户的所有项目" [ref=e220]
+              - cell "❌ 个人配置，不提交" [ref=e221]
+        - paragraph [ref=e222]:
+          - text: 当多个位置都存在
+          - code [ref=e223]: CLAUDE.md
+          - text: 时，Claude Code 会将它们
+          - strong [ref=e224]: 全部加载并合并
+          - text: ，优先级从高到低依次为：
+        - generic [ref=e225]: 项目本地 → 项目根目录 → 子目录 → 全局用户级 
+        - blockquote [ref=e226]:
+          - paragraph [ref=e227]:
+            - text: 项目根目录的
+            - code [ref=e228]: CLAUDE.md
+            - text: 建议提交到 git，让整个团队共享同一套 AI 工作规范。
+          - paragraph [ref=e229]:
+            - text: 个人偏好（如不喜欢加分号）放在
+            - code [ref=e230]: .claude/CLAUDE.md
+            - text: 中并加入
+            - code [ref=e231]: .gitignore
+            - text: ，不影响他人。
+        - separator [ref=e232]
+        - heading "快速创建 CLAUDE.md" [level=2] [ref=e233]
+        - paragraph [ref=e234]: 最简单的方式是让 Claude Code 自动生成初始版本。在项目目录中启动 Claude Code 后，执行：
+        - generic [ref=e235]: /init 
+        - paragraph [ref=e236]:
+          - text: Claude Code 会分析你的项目结构、代码风格、已有配置文件（如
+          - code [ref=e237]: package.json
+          - text: 、
+          - code [ref=e238]: pyproject.toml
+          - text: 、
+          - code [ref=e239]: .eslintrc
+          - text: 等），自动生成一份符合项目实际情况的
+          - code [ref=e240]: CLAUDE.md
+          - text: ，然后你可以在此基础上补充和调整。
+        - paragraph [ref=e241]: 也可以在项目目录中手动创建：
+        - generic [ref=e242]: touch CLAUDE.md 
+        - separator [ref=e243]
+        - heading "文件内容结构" [level=2] [ref=e244]
+        - paragraph [ref=e245]:
+          - code [ref=e246]: CLAUDE.md
+          - text: 是一个普通的 Markdown 文件，没有强制的格式要求，但良好的结构能帮助 Claude 更快找到关键信息。以下是推荐的内容结构：
+        - generic [ref=e247]: "# 项目名称 一句话说明这个项目是什么，方便 Claude 快速定位项目性质。 ## 技术栈 - 语言：Python 3.11 - 框架：FastAPI 0.110 - 数据库：PostgreSQL 15 + SQLAlchemy ORM - 测试：pytest ## 常用命令 ### 开发 ```bash uv run uvicorn main:app --reload # 启动开发服务器 uv run pytest # 运行所有测试 uv run pytest -k \"test_auth\" # 运行指定测试 ``` ### 代码检查 ```bash uv run ruff check . # 代码检查 uv run ruff format . # 代码格式化 ``` ## 项目结构 - `src/api/` — API 路由和请求处理 - `src/models/` — 数据库模型定义 - `src/services/` — 业务逻辑层 - `tests/` — 测试文件，与 src/ 目录结构镜像对应 ## 编码规范 - 使用 `uv` 管理依赖，不使用 pip 直接安装 - 所有函数必须有类型注解 - 字符串一律使用双引号 - 新增 API 路由必须同步添加测试 ## 注意事项 - 不要修改 `migrations/` 目录下的已有文件，只能新增迁移文件 - `config/secrets.py` 包含敏感配置，禁止输出其内容到日志或终端 - 数据库操作必须通过 Service 层，不要在路由层直接操作 ORM "
+        - separator [ref=e248]
+        - heading "核心内容模块详解" [level=2] [ref=e249]
+        - heading "1、常用命令" [level=3] [ref=e250]
+        - paragraph [ref=e251]:
+          - text: 这是
+          - code [ref=e252]: CLAUDE.md
+          - text: 中
+          - strong [ref=e253]: 最高频被参考
+          - text: 的部分。Claude 在执行测试、构建、代码检查等任务时，会优先查找这里定义的命令，避免猜测或使用错误的命令：
+        - generic [ref=e254]: "## 常用命令 ### 安装依赖 ```bash npm ci # 安装依赖（CI 环境使用，严格按 lock 文件安装） ``` ### 开发 ```bash npm run dev # 启动开发服务器（端口 3000） npm run build # 构建生产版本 npm run preview # 预览生产构建 ``` ### 测试 ```bash npm test # 运行所有测试 npm test -- --watch # 监听模式 npm test -- --coverage # 生成覆盖率报告 ``` ### 代码质量 ```bash npm run lint # ESLint 检查 npm run lint:fix # 自动修复可修复的问题 npm run typecheck # TypeScript 类型检查 ``` "
+        - heading "2、项目结构说明" [level=3] [ref=e255]
+        - paragraph [ref=e256]: 帮助 Claude 快速定位文件，减少不必要的目录扫描，尤其在大型项目中效果明显：
+        - generic [ref=e257]: "## 项目结构 ``` src/ ├── app/ # Next.js App Router 页面 │ ├── (auth)/ # 需要登录才能访问的页面组 │ └── api/ # API 路由 ├── components/ # 可复用 UI 组件 │ ├── ui/ # 基础 UI 组件（Button、Input 等） │ └── features/ # 业务组件（按功能模块组织） ├── lib/ # 工具函数和配置 │ ├── db/ # 数据库客户端和查询 │ └── auth/ # 认证相关逻辑 └── types/ # TypeScript 类型定义 ``` 关键文件： - `src/lib/db/client.ts` — 数据库连接配置 - `src/middleware.ts` — 认证中间件，处理路由保护 - `env.example` — 所有必要的环境变量示例 "
+        - heading "3、编码规范" [level=3] [ref=e258]
+        - paragraph [ref=e259]: 告知 Claude 项目的代码风格和约定，确保生成的代码与现有代码库风格一致：
+        - generic [ref=e260]: "## 编码规范 ### 通用 - 文件名使用 kebab-case（如 `user-profile.ts`），类名使用 PascalCase - 优先使用具名导出（named export），避免默认导出（default export） - 异步函数一律使用 async/await，禁止使用 .then() 链式调用 ### 组件规范 - 组件文件与其测试文件放在同一目录（如 `Button.tsx` 和 `Button.test.tsx`） - Props 类型使用 interface 定义，命名格式为 `${组件名}Props` - 不要将业务逻辑写在组件中，提取为自定义 Hook 或 Service ### 错误处理 - API 路由使用统一的错误响应格式：`{ error: string, code: string }` - 客户端错误通过 Error Boundary 捕获，不要在每个组件里单独 try/catch "
+        - heading "4、架构约束与禁止事项" [level=3] [ref=e261]
+        - paragraph [ref=e262]: 这是防止 Claude 犯"聪明但错误"决策的关键部分。对于你了解但 Claude 不知道的特殊情况，必须明确写出来：
+        - generic [ref=e263]: "## 架构约束 - 所有数据库查询必须通过 `src/lib/db/queries/` 中的函数执行，不要在路由或组件中直接写 SQL - 状态管理使用 Zustand，不要引入 Redux 或其他状态管理库 - 样式使用 Tailwind CSS utility class，不要新增 CSS 文件或使用 CSS Modules ## 注意事项（重要） - `legacy/` 目录下的代码是遗留代码，**禁止修改**，只能读取 - `.env.local` 和 `.env.production` 包含真实密钥，**禁止输出文件内容** - `prisma/migrations/` 中已有的迁移文件**禁止修改**，数据库变更只能新增迁移 - 修改 `src/middleware.ts` 前必须先告知我，该文件影响所有路由的认证逻辑 "
+        - heading "5、开发环境说明" [level=3] [ref=e264]
+        - paragraph [ref=e265]: 帮助 Claude 理解项目的运行环境，避免因环境差异导致命令执行失败：
+        - generic [ref=e266]: "## 开发环境 - Node.js：需要 v20 或以上版本（通过 `.nvmrc` 指定） - 包管理器：pnpm（禁止使用 npm 或 yarn 安装依赖） - 本地数据库：Docker Compose 启动（`docker compose up -d`） - 端口：前端 3000，API 3001，数据库 5432 ### 环境变量 参考 `.env.example` 文件配置本地环境变量，复制为 `.env.local` 后填入实际值。 必填项：`DATABASE_URL`、`NEXTAUTH_SECRET`、`NEXTAUTH_URL` "
+        - separator [ref=e267]
+        - heading "多模块仓库（Monorepo）的配置方式" [level=2] [ref=e268]
+        - paragraph [ref=e269]:
+          - text: 在 Monorepo 中，可以在仓库根目录放一个全局
+          - code [ref=e270]: CLAUDE.md
+          - text: ，每个子包目录下再放各自的
+          - code [ref=e271]: CLAUDE.md
+          - text: 。Claude 打开某个子包的文件时，会同时加载根目录和该子包目录下的两个文件：
+        - generic [ref=e272]: my-monorepo/ ├── CLAUDE.md ← 全局规范：共用命令、整体架构、通用约定 ├── packages/ │ ├── web/ │ │ └── CLAUDE.md ← 前端专属：React 规范、样式约定、构建流程 │ ├── api/ │ │ └── CLAUDE.md ← 后端专属：API 设计规范、数据库约定 │ └── shared/ │ └── CLAUDE.md ← 共享包：导出规则、版本管理约定 └── tools/ └── CLAUDE.md ← 工具脚本：特殊说明和使用限制 
+        - generic [ref=e273]: "<!-- 根目录 CLAUDE.md（全局规范） --> # My Monorepo 使用 pnpm workspace 管理的前后端一体化项目。 ## 全局命令 ```bash pnpm install # 安装所有包的依赖 pnpm -r build # 构建所有包 pnpm -r test # 运行所有包的测试 pnpm --filter web dev # 只启动 web 包的开发服务器 ``` ## 包之间的依赖关系 - `web` 和 `api` 都依赖 `shared` - 禁止 `shared` 依赖 `web` 或 `api`（防止循环依赖） - 跨包引用使用包名（如 `@my-app/shared`），不要使用相对路径 "
+        - separator [ref=e274]
+        - heading "用 @ 语法引用外部文件" [level=2] [ref=e275]
+        - paragraph [ref=e276]:
+          - text: 当项目已经有了规范文档（如 API 设计规范、数据库设计文档等），不需要将内容复制到
+          - code [ref=e277]: CLAUDE.md
+          - text: 中，直接用
+          - code [ref=e278]: "@文件路径"
+          - text: 引用即可。
+        - paragraph [ref=e279]:
+          - text: Claude 读取
+          - code [ref=e280]: CLAUDE.md
+          - text: 时会自动加载引用的文件内容：
+        - generic [ref=e281]: "## 规范文档 详细的 API 设计规范请参考： @docs/api-design-guide.md 数据库设计约定： @docs/database-conventions.md 组件库使用说明： @docs/component-guidelines.md "
+        - blockquote [ref=e282]:
+          - paragraph [ref=e283]:
+            - text: 引用的文件路径是相对于
+            - code [ref=e284]: CLAUDE.md
+            - text: 所在目录的相对路径。引用的文件内容会占用上下文窗口，避免引用过大的文件（建议单个引用文件不超过 500 行）。
+        - separator [ref=e285]
+        - heading "全局 CLAUDE.md 的使用建议" [level=2] [ref=e286]
+        - paragraph [ref=e287]:
+          - text: 用户级别的
+          - code [ref=e288]: ~/.claude/CLAUDE.md
+          - text: 适合存放跨项目通用的个人偏好和习惯，这些内容对所有项目生效：
+        - generic [ref=e289]: "<!-- 文件路径：~/.claude/CLAUDE.md --> # 个人全局配置 ## 回答偏好 - 回复使用中文 - 代码修改前先简要说明修改思路，不要直接给出代码 - 遇到有多种实现方案时，列出选项让我选择，而不是直接选一种 ## 通用约定 - 提交信息使用英文，格式：`type(scope): description` - 新文件开头不加版权注释 - 优先使用原生 API，避免引入不必要的依赖 ## 安全习惯 - 修改认证相关代码前主动提示我注意安全影响 - 不要在代码注释或日志中输出任何密钥或 token "
+        - separator [ref=e290]
+        - heading "CLAUDE.md 的维护建议" [level=2] [ref=e291]
+        - heading "1、保持精简" [level=3] [ref=e292]
+        - paragraph [ref=e293]:
+          - code [ref=e294]: CLAUDE.md
+          - text: 的内容会在每次会话中占用上下文窗口。内容过多会压缩 Claude 实际可用的上下文空间，反而降低效率。建议遵循以下原则：
+        - list [ref=e295]:
+          - listitem [ref=e296]: 每条规则只写一次，不要重复表达相同意思
+          - listitem [ref=e297]: 与代码无关的背景信息（如公司介绍、产品规划）不要写进来
+          - listitem [ref=e298]:
+            - text: 能通过代码本身传达的信息（如 eslint 配置已经定义了代码风格），不需要在
+            - code [ref=e299]: CLAUDE.md
+            - text: 中重复声明
+          - listitem [ref=e300]: 建议总字数控制在 500 字以内，超过 1000 字时需要考虑精简
+        - heading "2、持续更新" [level=3] [ref=e301]
+        - paragraph [ref=e302]:
+          - text: 随着项目的演进，
+          - code [ref=e303]: CLAUDE.md
+          - text: 也需要同步更新。以下时机应该触发更新：
+        - list [ref=e304]:
+          - listitem [ref=e305]: 更换了包管理器或构建工具
+          - listitem [ref=e306]: 添加或移除了重要的依赖库
+          - listitem [ref=e307]: 制定了新的编码约定
+          - listitem [ref=e308]:
+            - text: 发现 Claude 反复犯同一类错误（说明需要在
+            - code [ref=e309]: CLAUDE.md
+            - text: 中补充说明）
+          - listitem [ref=e310]: 某个文件或模块变得不能随意修改（增加到注意事项中）
+        - heading "3、用命令式语言" [level=3] [ref=e311]
+        - paragraph [ref=e312]: 指令越明确，Claude 遵守的概率越高。避免模糊的描述，使用直接的命令：
+        - table [ref=e313]:
+          - rowgroup [ref=e314]:
+            - row "❌ 模糊描述 ✅ 明确指令" [ref=e315]:
+              - columnheader "❌ 模糊描述" [ref=e316]
+              - columnheader "✅ 明确指令" [ref=e317]
+          - rowgroup [ref=e318]:
+            - row "代码应该比较整洁 函数不超过 50 行，超过时必须拆分" [ref=e319]:
+              - cell "代码应该比较整洁" [ref=e320]
+              - cell "函数不超过 50 行，超过时必须拆分" [ref=e321]
+            - row "尽量写测试 每个新增函数都必须有对应的单元测试" [ref=e322]:
+              - cell "尽量写测试" [ref=e323]
+              - cell "每个新增函数都必须有对应的单元测试" [ref=e324]
+            - row "注意安全 用户输入必须通过 sanitize() 函数处理后才能传入数据库查询" [ref=e325]:
+              - cell "注意安全" [ref=e326]
+              - cell "用户输入必须通过 sanitize() 函数处理后才能传入数据库查询" [ref=e327]:
+                - text: 用户输入必须通过
+                - code [ref=e328]: sanitize()
+                - text: 函数处理后才能传入数据库查询
+            - row "legacy 目录不太重要 禁止修改 legacy/ 目录下的任何文件" [ref=e329]:
+              - cell "legacy 目录不太重要" [ref=e330]
+              - cell "禁止修改 legacy/ 目录下的任何文件" [ref=e331]:
+                - text: 禁止修改
+                - code [ref=e332]: legacy/
+                - text: 目录下的任何文件
+            - row "用 pnpm 比较好 依赖管理只使用 pnpm，禁止使用 npm 或 yarn" [ref=e333]:
+              - cell "用 pnpm 比较好" [ref=e334]
+              - cell "依赖管理只使用 pnpm，禁止使用 npm 或 yarn" [ref=e335]
+        - separator [ref=e336]
+        - heading "完整示例" [level=2] [ref=e337]
+        - paragraph [ref=e338]:
+          - text: 以下是一个 Node.js + TypeScript 全栈项目的
+          - code [ref=e339]: CLAUDE.md
+          - text: 完整示例，可以作为你项目的参考模板：
+        - generic [ref=e340]:
+          - heading "实例" [level=2] [ref=e341]
+          - generic [ref=e342]:
+            - text: "# MyApp — 电商管理后台"
+            - text: 基于 Next.js 14 App Router + Prisma + PostgreSQL 的电商管理系统。
+            - text: "## 技术栈"
+            - text: "- 前端：Next.js 14（App Router）、TypeScript、Tailwind CSS、shadcn/ui"
+            - text: "- 后端：Next.js API Routes、Prisma ORM"
+            - text: "- 数据库：PostgreSQL 15"
+            - text: "- 认证：NextAuth.js v5"
+            - text: "- 包管理：pnpm"
+            - text: "## 常用命令"
+            - text: "```bash"
+            - text: "pnpm dev # 启动开发服务器（端口 3000）"
+            - text: "pnpm build && pnpm start # 构建并启动生产服务器"
+            - text: "pnpm test # 运行所有测试"
+            - text: "pnpm test:e2e # 运行端到端测试（需先启动 dev server）"
+            - text: "pnpm db:migrate # 执行数据库迁移"
+            - text: "pnpm db:studio # 打开 Prisma Studio（数据库可视化工具）"
+            - text: "pnpm lint && pnpm typecheck # 代码检查和类型检查"
+            - text: "```"
+            - text: "## 项目结构"
+            - text: "- `src/app/` — App Router 页面和 API 路由"
+            - text: "- `src/app/(dashboard)/` — 需要登录的后台页面"
+            - text: "- `src/app/api/` — API 路由（RESTful 风格）"
+            - text: "- `src/components/` — 可复用组件"
+            - text: "- `src/lib/` — 工具函数、数据库客户端、认证配置"
+            - text: "- `prisma/schema.prisma` — 数据库 Schema 定义"
+            - text: "## 编码规范"
+            - text: "- 只使用具名导出（named export），禁止 default export（除 Next.js 页面文件外）"
+            - text: "- 服务端组件默认 async，客户端组件在文件顶部加 `\"use client\"`"
+            - text: "- API 路由统一返回格式：成功 `{ data: T }`，失败 `{ error: string, code: string }`"
+            - text: "- 数据库查询封装在 `src/lib/db/` 目录下，不在其他地方直接使用 `prisma` 客户端"
+            - text: "## 注意事项"
+            - text: "- `prisma/migrations/` 中已有文件**禁止修改**，数据库变更只能执行 `pnpm db:migrate` 新增迁移"
+            - text: "- `.env.local` 包含真实密钥，**禁止读取或输出文件内容**"
+            - text: "- `src/lib/auth.ts` 是认证核心文件，**修改前必须告知我**"
+            - text: "- 修改 `prisma/schema.prisma` 后必须执行 `pnpm db:migrate` 并提交迁移文件"
+            - text: 
+        - separator [ref=e343]
+        - heading "常见问题" [level=2] [ref=e344]
+        - paragraph [ref=e345]:
+          - strong [ref=e346]: Q：CLAUDE.md 里的规则 Claude 不遵守怎么办？
+        - paragraph [ref=e347]: 首先检查规则的表述是否足够明确（见上方"用命令式语言"的建议）。如果表述已经很明确但仍不遵守，可以在具体的对话中再次强调，或者将该规则放到文件靠前的位置——Claude 对文件前半部分的内容注意力更高。
+        - paragraph [ref=e348]:
+          - strong [ref=e349]: Q：CLAUDE.md 越长越好吗？
+        - paragraph [ref=e350]: 不是。内容过多有两个副作用：一是占用上下文窗口，压缩 Claude 处理实际任务的空间；二是重要规则淹没在大量文字中，反而不容易被遵守。建议定期审视，删除已经不再适用或低价值的条目。
+        - paragraph [ref=e351]:
+          - strong [ref=e352]: Q：子目录下的 CLAUDE.md 什么时候会被加载？
+        - paragraph [ref=e353]:
+          - text: 当 Claude 打开或编辑该子目录下的文件时，该子目录的
+          - code [ref=e354]: CLAUDE.md
+          - text: 会自动被加载。你不需要手动告诉 Claude 去读取它，整个过程是自动的。
+        - paragraph [ref=e355]:
+          - strong [ref=e356]: Q：可以在 CLAUDE.md 中引用另一个 CLAUDE.md 吗？
+        - paragraph [ref=e357]:
+          - text: 不能直接引用，但你可以通过
+          - code [ref=e358]: "@文件路径"
+          - text: 语法引用任意 Markdown 文件的内容。如果有跨模块共享的规范，建议提取到独立的文档文件中，再分别在各
+          - code [ref=e359]: CLAUDE.md
+          - text: 中用
+          - code [ref=e360]: "@"
+          - text: 引用。
+      - generic [ref=e361]:
+        - generic [ref=e362]:
+          - link [ref=e363] [cursor=pointer]:
+            - /url: https://www.runoob.com/claude-code/claude-code-basic.html
+            - generic [ref=e364]: 
+          - link "Claude Code 基础用法" [ref=e365] [cursor=pointer]:
+            - /url: https://www.runoob.com/claude-code/claude-code-basic.html
+        - generic [ref=e366]:
+          - link "Claude Code 上下文管理" [ref=e367] [cursor=pointer]:
+            - /url: https://www.runoob.com/claude-code/claude-code-context.html
+          - link [ref=e368] [cursor=pointer]:
+            - /url: https://www.runoob.com/claude-code/claude-code-context.html
+            - generic [ref=e369]: 
+      - insertion [ref=e372]
+      - generic [ref=e374]:
+        - heading "点我分享笔记" [level=3] [ref=e376]:
+          - generic [ref=e377]: 
+          - text: 点我分享笔记
+        - text:        
+    - generic [ref=e378]:
+      - generic [ref=e379]:
+        - link "分类导航" [ref=e381] [cursor=pointer]:
+          - /url: javascript:void(0);
+          - generic [ref=e382]: 
+          - text: 分类导航
+        - list [ref=e385]:
+          - listitem [ref=e386] [cursor=pointer]:
+            - link "Python / 数据科学" [ref=e387]:
+              - /url: javascript:void(0);
+          - listitem [ref=e388] [cursor=pointer]:
+            - link "AI / 智能开发" [ref=e389]:
+              - /url: javascript:void(0);
+          - listitem [ref=e390] [cursor=pointer]:
+            - link "前端开发" [ref=e391]:
+              - /url: javascript:void(0);
+          - listitem [ref=e392] [cursor=pointer]:
+            - link "后端开发" [ref=e393]:
+              - /url: javascript:void(0);
+          - listitem [ref=e394] [cursor=pointer]:
+            - link "数据库" [ref=e395]:
+              - /url: javascript:void(0);
+          - listitem [ref=e396] [cursor=pointer]:
+            - link "移动开发" [ref=e397]:
+              - /url: javascript:void(0);
+          - listitem [ref=e398] [cursor=pointer]:
+            - link "DevOps / 工程化" [ref=e399]:
+              - /url: javascript:void(0);
+          - listitem [ref=e400] [cursor=pointer]:
+            - link "编程语言" [ref=e401]:
+              - /url: javascript:void(0);
+          - listitem [ref=e402] [cursor=pointer]:
+            - link "计算机基础" [ref=e403]:
+              - /url: javascript:void(0);
+          - listitem [ref=e404] [cursor=pointer]:
+            - link "XML / Web Service" [ref=e405]:
+              - /url: javascript:void(0);
+          - listitem [ref=e406] [cursor=pointer]:
+            - link ".NET" [ref=e407]:
+              - /url: javascript:void(0);
+          - listitem [ref=e408] [cursor=pointer]:
+            - link "网站建设" [ref=e409]:
+              - /url: javascript:void(0);
+      - generic [ref=e410]:
+        - link "Advertisement" [ref=e412] [cursor=pointer]:
+          - /url: javascript:void(0);
+        - generic [ref=e413]:
+          - insertion:
+            - iframe [ref=e415]:
+              
+  - generic [ref=e417] [cursor=pointer]: 
+  - generic [ref=e418]:
+    - generic [ref=e419]:
+      - generic [ref=e420]: 
+      - textbox "搜索文章..." [ref=e421]
+    - generic [ref=e423]:
+      - generic [ref=e424]:
+        - generic [ref=e425]: 
+        - text: Claude Code 教程
+      - generic [ref=e426]:
+        - link " Claude Code 教程" [ref=e427] [cursor=pointer]:
+          - /url: /claude-code/claude-code-tutorial.html
+          - generic [ref=e428]: 
+          - text: Claude Code 教程
+        - link " Claude Code 简介" [ref=e429] [cursor=pointer]:
+          - /url: /claude-code/claude-code-intro.html
+          - generic [ref=e430]: 
+          - text: Claude Code 简介
+        - link " Claude Code 安装与使用" [ref=e431] [cursor=pointer]:
+          - /url: /claude-code/claude-code-install.html
+          - generic [ref=e432]: 
+          - text: Claude Code 安装与使用
+        - link " Claude Code 如何工作" [ref=e433] [cursor=pointer]:
+          - /url: /claude-code/claude-code-how-it-work.html
+          - generic [ref=e434]: 
+          - text: Claude Code 如何工作
+        - link " Claude Code API 配置" [ref=e435] [cursor=pointer]:
+          - /url: /claude-code/claude-code-setup.html
+          - generic [ref=e436]: 
+          - text: Claude Code API 配置
+        - link " Claude Code DeepSeek" [ref=e437] [cursor=pointer]:
+          - /url: /claude-code/claude-code-deepseek.html
+          - generic [ref=e438]: 
+          - text: Claude Code DeepSeek
+        - link " Coding Plan" [ref=e439] [cursor=pointer]:
+          - /url: /claude-code/coding-plan.html
+          - generic [ref=e440]: 
+          - text: Coding Plan
+        - link " Claude Code 第一次使用" [ref=e441] [cursor=pointer]:
+          - /url: /claude-code/claude-code-first-demo.html
+          - generic [ref=e442]: 
+          - text: Claude Code 第一次使用
+        - link " VS Code Claude Code" [ref=e443] [cursor=pointer]:
+          - /url: /claude-code/vscode-install-claude-code.html
+          - generic [ref=e444]: 
+          - text: VS Code Claude Code
+        - link " JetBrains Claude Code" [ref=e445] [cursor=pointer]:
+          - /url: /claude-code/claude-code-jetbrains.html
+          - generic [ref=e446]: 
+          - text: JetBrains Claude Code
+        - link " Claude Code 项目初始化" [ref=e447] [cursor=pointer]:
+          - /url: /claude-code/claude-code-init.html
+          - generic [ref=e448]: 
+          - text: Claude Code 项目初始化
+        - link " Claude Code 项目结构" [ref=e449] [cursor=pointer]:
+          - /url: /claude-code/claude-code-project.html
+          - generic [ref=e450]: 
+          - text: Claude Code 项目结构
+        - link " Claude Code 交互模式" [ref=e451] [cursor=pointer]:
+          - /url: /claude-code/claude-code-cli.html
+          - generic [ref=e452]: 
+          - text: Claude Code 交互模式
+        - link " Claude Code 操作说明" [ref=e453] [cursor=pointer]:
+          - /url: /claude-code/claude-code-symbols.html
+          - generic [ref=e454]: 
+          - text: Claude Code 操作说明
+        - link " Claude Code 基础用法" [ref=e455] [cursor=pointer]:
+          - /url: /claude-code/claude-code-basic.html
+          - generic [ref=e456]: 
+          - text: Claude Code 基础用法
+        - link " CLAUDE.md 使用指南" [ref=e457] [cursor=pointer]:
+          - /url: /claude-code/claude-code-claudemd.html
+          - generic [ref=e458]: 
+          - text: CLAUDE.md 使用指南
+        - link " Claude Code 上下文管理" [ref=e459] [cursor=pointer]:
+          - /url: /claude-code/claude-code-context.html
+          - generic [ref=e460]: 
+          - text: Claude Code 上下文管理
+        - link " Claude Code 权限配置" [ref=e461] [cursor=pointer]:
+          - /url: /claude-code/claude-code-permission.html
+          - generic [ref=e462]: 
+          - text: Claude Code 权限配置
+        - link " Claude Code MCP" [ref=e463] [cursor=pointer]:
+          - /url: /claude-code/claude-code-mcp.html
+          - generic [ref=e464]: 
+          - text: Claude Code MCP
+        - link " Claude Code 子代理" [ref=e465] [cursor=pointer]:
+          - /url: /claude-code/claude-code-subagent.html
+          - generic [ref=e466]: 
+          - text: Claude Code 子代理
+        - link " Claude Code 插件" [ref=e467] [cursor=pointer]:
+          - /url: /claude-code/claude-code-plugins.html
+          - generic [ref=e468]: 
+          - text: Claude Code 插件
+        - link " Claude Code 记忆系统" [ref=e469] [cursor=pointer]:
+          - /url: /claude-code/claude-code-memory.html
+          - generic [ref=e470]: 
+          - text: Claude Code 记忆系统
+        - link " Agent Skills" [ref=e471] [cursor=pointer]:
+          - /url: /claude-code/claude-agent-skills.html
+          - generic [ref=e472]: 
+          - text: Agent Skills
+        - link " Skills 使用实例" [ref=e473] [cursor=pointer]:
+          - /url: /claude-code/claude-code-ui-ux-pro-max-skill.html
+          - generic [ref=e474]: 
+          - text: Skills 使用实例
+        - link " skill-creator 使用" [ref=e475] [cursor=pointer]:
+          - /url: /claude-code/skill-creator-usage.html
+          - generic [ref=e476]: 
+          - text: skill-creator 使用
+        - link " Claude Code 输出样式" [ref=e477] [cursor=pointer]:
+          - /url: /claude-code/claude-code-outputstyles.html
+          - generic [ref=e478]: 
+          - text: Claude Code 输出样式
+        - link " Claude Code 钩子" [ref=e479] [cursor=pointer]:
+          - /url: /claude-code/claude-code-hooks.html
+          - generic [ref=e480]: 
+          - text: Claude Code 钩子
+        - link " Claude Code CLI 参考手册" [ref=e481] [cursor=pointer]:
+          - /url: /claude-code/claude-code-cli-ref.html
+          - generic [ref=e482]: 
+          - text: Claude Code CLI 参考手册
+        - link " Claude Code 控制与模式" [ref=e483] [cursor=pointer]:
+          - /url: /claude-code/claude-code-control.html
+          - generic [ref=e484]: 
+          - text: Claude Code 控制与模式
+        - link " Claude Code 斜杠 / 命令" [ref=e485] [cursor=pointer]:
+          - /url: /claude-code/claude-code-slash-commands.html
+          - generic [ref=e486]: 
+          - text: Claude Code 斜杠 / 命令
+        - link " Claude Code 检查点" [ref=e487] [cursor=pointer]:
+          - /url: /claude-code/claude-code-checkpointing.html
+          - generic [ref=e488]: 
+          - text: Claude Code 检查点
+        - link " Claude Code 插件参考手册" [ref=e489] [cursor=pointer]:
+          - /url: /claude-code/claude-code-plugin-ref.html
+          - generic [ref=e490]: 
+          - text: Claude Code 插件参考手册
+        - link " Claude Code 实战" [ref=e491] [cursor=pointer]:
+          - /url: /claude-code/claude-code-practical.html
+          - generic [ref=e492]: 
+          - text: Claude Code 实战
+        - link " Claude Code Chrome" [ref=e493] [cursor=pointer]:
+          - /url: /claude-code/claude-code-chrome.html
+          - generic [ref=e494]: 
+          - text: Claude Code Chrome
+        - link " Claude Code 并行任务" [ref=e495] [cursor=pointer]:
+          - /url: /claude-code/claude-code-parallel-tasks.html
+          - generic [ref=e496]: 
+          - text: Claude Code 并行任务
+        - link " Claude Code 环境变量" [ref=e497] [cursor=pointer]:
+          - /url: /claude-code/claude-code-env.html
+          - generic [ref=e498]: 
+          - text: Claude Code 环境变量
+        - link " Claude Code Git 工作流" [ref=e499] [cursor=pointer]:
+          - /url: /claude-code/claude-code-git-workflow.html
+          - generic [ref=e500]: 
+          - text: Claude Code Git 工作流
+        - link " Claude Code GitHub Actions" [ref=e501] [cursor=pointer]:
+          - /url: /claude-code/claude-code-github-actions.html
+          - generic [ref=e502]: 
+          - text: Claude Code GitHub Actions
+        - link " Claude Agent SDK" [ref=e503] [cursor=pointer]:
+          - /url: /claude-code/claude-agent-sdk.html
+          - generic [ref=e504]: 
+          - text: Claude Agent SDK
+        - link " Claude Code 开发配置" [ref=e505] [cursor=pointer]:
+          - /url: /claude-code/claude-code-devsetup.html
+          - generic [ref=e506]: 
+          - text: Claude Code 开发配置
+        - link " Claude Code 制作视频" [ref=e507] [cursor=pointer]:
+          - /url: /claude-code/claude-code-remotion-best-practices.html
+          - generic [ref=e508]: 
+          - text: Claude Code 制作视频
+        - link " Claude Code 实战" [ref=e509] [cursor=pointer]:
+          - /url: /claude-code/claude-code-todo.html
+          - generic [ref=e510]: 
+          - text: Claude Code 实战
+  - generic [ref=e511]:
+    - generic [ref=e513]:
+      - generic [ref=e514]:
+        - term [ref=e515]: 在线实例
+        - definition [ref=e516]:
+          - text: ·
+          - link "HTML 实例" [ref=e517] [cursor=pointer]:
+            - /url: /html/html-examples.html
+        - definition [ref=e518]:
+          - text: ·
+          - link "CSS 实例" [ref=e519] [cursor=pointer]:
+            - /url: /css/css-examples.html
+        - definition [ref=e520]:
+          - text: ·
+          - link "JavaScript 实例" [ref=e521] [cursor=pointer]:
+            - /url: /js/js-examples.html
+        - definition [ref=e522]:
+          - text: ·
+          - link "Ajax 实例" [ref=e523] [cursor=pointer]:
+            - /url: /ajx/ajax-examples.html
+        - definition [ref=e524]:
+          - text: ·
+          - link "jQuery 实例" [ref=e525] [cursor=pointer]:
+            - /url: /jquery/jquery-examples.html
+        - definition [ref=e526]:
+          - text: ·
+          - link "XML 实例" [ref=e527] [cursor=pointer]:
+            - /url: /xml/xml-examples.html
+        - definition [ref=e528]:
+          - text: ·
+          - link "Java 实例" [ref=e529] [cursor=pointer]:
+            - /url: /java/java-examples.html
+      - generic [ref=e530]:
+        - term [ref=e531]: 字符集&工具
+        - definition [ref=e532]:
+          - text: ·
+          - link "HTML 字符集设置" [ref=e533] [cursor=pointer]:
+            - /url: /charsets/html-charsets.html
+        - definition [ref=e534]:
+          - text: ·
+          - link "HTML ASCII 字符集" [ref=e535] [cursor=pointer]:
+            - /url: /tags/html-ascii.html
+        - definition [ref=e536]:
+          - text: ·
+          - link "JS 混淆/加密" [ref=e537] [cursor=pointer]:
+            - /url: https://www.jyshare.com/front-end/6939/
+        - definition [ref=e538]:
+          - text: ·
+          - link "PNG/JPEG 图片压缩" [ref=e539] [cursor=pointer]:
+            - /url: https://www.jyshare.com/front-end/6232/
+        - definition [ref=e540]:
+          - text: ·
+          - link "HTML 拾色器" [ref=e541] [cursor=pointer]:
+            - /url: /tags/html-colorpicker.html
+        - definition [ref=e542]:
+          - text: ·
+          - link "JSON 格式化工具" [ref=e543] [cursor=pointer]:
+            - /url: https://www.jyshare.com/front-end/53
+        - definition [ref=e544]:
+          - text: ·
+          - link "随机数生成器" [ref=e545] [cursor=pointer]:
+            - /url: https://www.jyshare.com/front-end/6680/
+      - generic [ref=e546]:
+        - term [ref=e547]: 最新更新
+        - definition [ref=e548]:
+          - text: ·
+          - link "搭子（DuMate）..." [ref=e549] [cursor=pointer]:
+            - /url: http://www.runoob.com/ai-agent/dumate-usages.html
+        - definition [ref=e550]:
+          - text: ·
+          - link "QoderWake 入门教程" [ref=e551] [cursor=pointer]:
+            - /url: http://www.runoob.com/ai-agent/qoderwake-usage.html
+        - definition [ref=e552]:
+          - text: ·
+          - link "Obsidian 同步、..." [ref=e553] [cursor=pointer]:
+            - /url: http://www.runoob.com/obsidian/obsidian-sync-backup-tips.html
+        - definition [ref=e554]:
+          - text: ·
+          - link "Obsidian 工作流..." [ref=e555] [cursor=pointer]:
+            - /url: http://www.runoob.com/obsidian/obsidian-workflows.html
+        - definition [ref=e556]:
+          - text: ·
+          - link "Obsidian 插件" [ref=e557] [cursor=pointer]:
+            - /url: http://www.runoob.com/obsidian/obsidian-core-plugins.html
+        - definition [ref=e558]:
+          - text: ·
+          - link "Obsidian 文件组..." [ref=e559] [cursor=pointer]:
+            - /url: http://www.runoob.com/obsidian/obsidian-file-organization.html
+        - definition [ref=e560]:
+          - text: ·
+          - link "Obsidian 双链与..." [ref=e561] [cursor=pointer]:
+            - /url: http://www.runoob.com/obsidian/obsidian-bilinks-graph.html
+      - generic [ref=e562]:
+        - term [ref=e563]: 站点信息
+        - definition [ref=e564]:
+          - text: ·
+          - link "意见反馈" [ref=e565] [cursor=pointer]:
+            - /url: mailto:admin@runoob.com
+        - definition [ref=e566]:
+          - text: ·
+          - link "免责声明" [ref=e567] [cursor=pointer]:
+            - /url: /disclaimer
+        - definition [ref=e568]:
+          - text: ·
+          - link "关于我们" [ref=e569] [cursor=pointer]:
+            - /url: /aboutus
+        - definition [ref=e570]:
+          - text: ·
+          - link "文章归档" [ref=e571] [cursor=pointer]:
+            - /url: /archives
+      - generic [ref=e572]:
+        - strong [ref=e575]: 关注微信
+        - img [ref=e577]
+    - generic [ref=e578]:
+      - text: Copyright © 2013-2026
+      - strong [ref=e579]:
+        - link "菜鸟教程" [ref=e580] [cursor=pointer]:
+          - /url: //www.runoob.com/
+      - strong [ref=e581]:
+        - link "runoob.com" [ref=e582] [cursor=pointer]:
+          - /url: //www.runoob.com/
+      - text: All Rights Reserved. 备案号：
+      - link "闽ICP备15012807号-1" [ref=e583] [cursor=pointer]:
+        - /url: https://beian.miit.gov.cn/
+  - generic [ref=e584]:
+    - link " ." [ref=e585] [cursor=pointer]:
+      - /url: javascript:void(0)
+      - generic [ref=e586]: 
+      - text: .
+    - link " ." [ref=e587] [cursor=pointer]:
+      - /url: javascript:void(0)
+      - generic [ref=e588]: 
+      - text: .
+    - link " ." [ref=e589] [cursor=pointer]:
+      - /url: javascript:void(0)
+      - generic [ref=e590]: 
+      - text: .
+  - generic [ref=e591]:
+    - generic [ref=e592]:
+      - heading " 我的收藏" [level=2] [ref=e593]:
+        - generic [ref=e594]: 
+        - text: 我的收藏
+      - button "" [ref=e595] [cursor=pointer]:
+        - generic [ref=e596]: 
+    - generic [ref=e597]:
+      - generic [ref=e598] [cursor=pointer]:
+        - generic [ref=e599]: 
+        - text: 标记文章
+      - generic [ref=e600] [cursor=pointer]:
+        - generic [ref=e601]: 
+        - text: 浏览历史
+    - generic [ref=e602]:
+      - button " 清空全部" [ref=e604] [cursor=pointer]:
+        - generic [ref=e605]: 
+        - text: 清空全部
+      - generic [ref=e607]:
+        - generic [ref=e608]: 
+        - text: 暂无记录
+    - text: 
