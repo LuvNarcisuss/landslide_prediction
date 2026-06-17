@@ -1,0 +1,33 @@
+字段名,类别,含义,阶段
+elevation,地形因子,海拔高度(m),易发性
+aspect,地形因子,坡向(度),易发性
+tpi,地形因子,地形位置指数（正=山脊 负=沟谷）,易发性
+distance_to_river,地形因子,距最近河流距离(m),易发性
+rain_3d,降雨因子,前3天累积降雨量(mm),易发性
+rain_7d,降雨因子,前7天累积降雨量(mm),易发性
+rain_30d,降雨因子,前30天累积降雨量(mm),易发性
+api,降雨因子,前期降水指数（表征土壤湿度）,易发性
+ndvi,植被因子,归一化植被指数（-1~1 正值=植被覆盖）,易发性
+ndwi,植被因子,归一化水体指数（-1~1 正值=水体）,易发性
+lon,坐标,经度,易发性
+lat,坐标,纬度,易发性
+landuse,土地利用,土地利用类型（数值编码）,易发性
+rain_ratio_3d_30d,衍生特征,短期降雨集中度 = rain_3d / rain_30d,易发性
+rain_ratio_7d_30d,衍生特征,中期降雨集中度 = rain_7d / rain_30d,易发性
+rain_intensity,衍生特征,降雨强度变化率 = rain_3d / rain_7d,易发性
+valley_risk,衍生特征,沟谷汇水风险 = max(0,-tpi) / (dist_river+1),易发性
+elev_rain,衍生特征,高海拔+强降雨交互 = elevation × log(1+rain_3d),易发性
+aspect_rain,衍生特征,迎风坡降雨增强 = cos(aspect) × rain_3d,易发性
+ndvi_elev,衍生特征,植被覆盖与高程耦合 = ndvi × elevation / 1000,易发性
+log_dist_river,衍生特征,距河距离对数变换 = log1p(distance_to_river),易发性
+lu_Built-up,土地利用One-hot,建设用地哑变量,易发性
+lu_Cropland,土地利用One-hot,耕地哑变量,易发性
+lu_Grassland,土地利用One-hot,草地哑变量,易发性
+lu_Moss and Lichen,土地利用One-hot,苔藓地衣哑变量,易发性
+lu_Permanent water bodies,土地利用One-hot,永久水体哑变量,易发性
+lu_Trees,土地利用One-hot,树木覆盖哑变量,易发性
+threatened_people,暴露特征,威胁人口数(人),风险分析
+threatened_households,暴露特征,威胁户数(户),风险分析
+threatened_property,暴露特征,威胁财产(万元),风险分析
+exposure_index,暴露特征,综合暴露指数 = 0.4×People + 0.3×HH + 0.3×Property,风险分析
+label,标签,1=灾害点 0=非灾害点,标签

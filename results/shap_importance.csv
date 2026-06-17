@@ -1,0 +1,28 @@
+﻿特征,SHAP值
+lon,1.1007783
+elevation,0.85338163
+lat,0.67038316
+aspect_rain,0.61280584
+rain_30d,0.5373951
+valley_risk,0.5296087
+rain_intensity,0.50874186
+distance_to_river,0.42192662
+api,0.41649806
+ndvi,0.31912223
+rain_ratio_7d_30d,0.29496333
+ndwi,0.2463268
+rain_3d,0.22946472
+rain_7d,0.22591491
+ndvi_elev,0.2156032
+elev_rain,0.2063089
+rain_ratio_3d_30d,0.16429588
+tpi,0.15685448
+aspect,0.15183607
+landuse,0.057510104
+log_dist_river,0.038530234
+lu_Grassland,0.026680315
+lu_Cropland,0.017533854
+lu_Trees,0.011609777
+lu_Built-up,0.0014288845
+lu_Moss and Lichen,0.0
+lu_Permanent water bodies,0.0

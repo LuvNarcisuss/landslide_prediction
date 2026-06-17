@@ -1,4 +1,3 @@
-import os
 import numpy as np
 from catboost import CatBoostClassifier
 from pre_process import preprocess_data
@@ -25,7 +24,7 @@ def analyze_feature_importance():
 
     print("特征重要性排序:")
     print(f"{'特征':25s} {'重要性':>8s}  {'累计':>8s}")
-    print("-" * 45)
+    print("")
     cumsum = 0
     for idx in sorted_idx:
         cumsum += importances[idx] / 100

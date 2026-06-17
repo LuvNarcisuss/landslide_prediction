@@ -12,7 +12,8 @@ from sklearn.base import BaseEstimator, ClassifierMixin, clone
 from catboost import CatBoostClassifier
 from lightgbm import LGBMClassifier
 from xgboost import XGBClassifier
-from pre_process import *
+from pre_process import preprocess_data
+from pre_process.data_augmentation import augment_training_data
 import warnings
 
 warnings.filterwarnings('ignore')

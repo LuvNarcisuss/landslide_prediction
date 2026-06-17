@@ -5,7 +5,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.experimental import enable_iterative_imputer
 from sklearn.impute import IterativeImputer
-from sklearn.cluster import KMeans
 
 
 def preprocess_data(verbose=False, use_augmentation=False):
@@ -65,14 +64,6 @@ def preprocess_data(verbose=False, use_augmentation=False):
     aspect_rain = np.cos(np.radians(aspect)) * rain_3d
     # 高程降雨交互（高海拔+强降雨）
     elev_rain = elevation * np.log1p(rain_3d)
-
-    # 5. NDVI相关
-    ndvi_rain = ndvi * np.log1p(rain_3d) # 4. 地形特征
-    valley_risk = np.maximum(0, -tpi) / (distance_to_river + 1)
-    # 坡度方向与降雨交互（南向坡更易受降雨影响）
-    aspect_rain = np.cos(np.radians(aspect)) * rain_3d
-    # 高程降雨交互（高海拔+强降雨）
-    elev_rain = elevation * np.log1p(np.maximum(rain_3d, 0))
 
     # 5. NDVI相关
     ndvi_rain = ndvi * np.log1p(np.maximum(rain_3d, 0))

@@ -10,9 +10,8 @@ from sklearn.svm import SVC
 from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.base import BaseEstimator, ClassifierMixin, clone
-from pre_process import *
-from ML_algorithms import *
-from improve_algorithms import *
+from pre_process import preprocess_data
+from pre_process.data_augmentation import augment_training_data
 from catboost import CatBoostClassifier
 from lightgbm import LGBMClassifier
 from xgboost import XGBClassifier
