@@ -835,23 +835,3 @@ train_logs/
 
 6. **dataset/ 目录禁止修改**：原始数据文件是只读的，数据增强仅在训练时作用于内存。
 
-7. **编码规范**：所有 Python 文件遵循项目 `CLAUDE.md` 中的编码规范（注释格式、中文字体配置、输出格式等）。
-
----
-
-## 引用说明
-
-若使用本项目的代码或方法，请引用：
-
-```bibtex
-@software{landslide_prediction,
-  title = {阿坝州降雨诱发滑坡易发性评价 - Pipeline },
-  author = {Deng Shuanglin},
-  year = {2026},
-  description = {基于三源混合负样本生成和二阶段易发性-暴露度分离的滑坡易发性机器学习评价}
-}
-```
-
----
-
-> 本文档覆盖项目  完整流程。
