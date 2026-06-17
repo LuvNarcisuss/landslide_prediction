@@ -1,8 +1,6 @@
-# 阿坝州降雨诱发滑坡易发性评价 — Pipeline V2
+# 阿坝州降雨诱发滑坡易发性评价
 
 基于 **阿坝州地质灾害隐患点普查数据（7315条）**，采用**空间约束负样本生成 + 二阶段易发性-暴露度分离**的机器学习建模框架，实现滑坡易发性（Susceptibility）的二分类评价。
-
-采用**空间约束负样本生成 + 二阶段易发性-暴露度分离**的机器学习建模框架，符合滑坡易发性评价的国际学术规范。
 
 ---
 
@@ -11,7 +9,7 @@
 - [项目架构](#项目架构)
 - [核心创新](#核心创新)
 - [数据说明](#数据说明)
-- [V2 流程](#v2-流程)
+- [工作流程](#工作流程)
   - [1. 数据清洗](#1-数据清洗)
   - [2. 缺失值插补](#2-缺失值插补)
   - [3. 特征工程](#3-特征工程)
@@ -32,13 +30,13 @@
 dataset/aba_disaster_distribution.csv (7315×31)
                          │
     ┌────────────────────▼────────────────────┐
-    │         Pipeline V2 预处理              │
-    │  (data_cleaning → imputation →         │
-    │   pipeline_v2 → negative_sampling)     │
+    │         Pipeline  预处理               │
+    │  (data_cleaning → imputation →          │
+    │   pipeline → negative_sampling)         │
     └────────────────────┬────────────────────┘
                          │
     ┌────────────────────▼────────────────────┐
-    │         train_models_v2.py              │
+    │         train_models.py                 │
     │  9个基模型 + 4个集成模型 + Optuna + SHAP │
     └────────────────────┬────────────────────┘
                          │
@@ -104,11 +102,11 @@ dataset/aba_disaster_distribution.csv (7315×31)
 
 ### 灾害类型分布
 
-| 类型 | 样本数 | 占比 | V2 处理 |
+| 类型 | 样本数 | 占比 | 样本处理 |
 |:-----|:------:|:----:|:--------|
-| **滑坡** | 2,204 | 30.1% | 正样本 |
-| **不稳定斜坡** | 1,113 | 15.2% | 正样本 |
-| **泥石流** | 2,305 | 31.5% | 正样本 |
+| **滑坡** | 2,204 | 30.1% | 正样本     |
+| **不稳定斜坡** | 1,113 | 15.2% | 正样本     |
+| **泥石流** | 2,305 | 31.5% | 正样本     |
 | **崩塌** | 1,689 | 23.1% | 天然负样本来源 |
 | **地面塌陷** | 4 | 0.1% | 天然负样本来源 |
 
@@ -125,7 +123,7 @@ dataset/aba_disaster_distribution.csv (7315×31)
 
 ---
 
-## V2 流程
+## 工作流程
 
 ### 整体流程
 
@@ -147,7 +145,7 @@ dataset/aba_disaster_distribution.csv (7315×31)
     └────────────────────┬────────────────────┘
                          │
     ┌────────────────────▼────────────────────┐
-    │       pipeline_v2.py 特征工程            │
+    │       pipeline.py 特征工程               │
     │  • 地形因子：elevation, aspect, tpi...   │
     │  • 降雨因子：rain_3d/7d/30d, api         │
     │  • 植被因子：ndvi, ndwi                  │
@@ -165,13 +163,14 @@ dataset/aba_disaster_distribution.csv (7315×31)
     └────────────────────┬────────────────────┘
                          │
     ┌────────────────────▼────────────────────┐
-    │          train_models_v2.py              │
+    │          train_models.py                │
     │  • 9个基模型 + 4个集成模型                │
     │  • [可选] Optuna超参优化                  │
     │  • 概率校准 + 阈值优化                    │
     │  • SHAP特征重要性分析                     │
     │  • ROC/PR评估曲线                        │
     │  • 结果排名CSV输出                        │
+    │  • 训练日志自动生成                        │
     └─────────────────────────────────────────┘
                          │
                          ▼
@@ -200,7 +199,7 @@ dataset/aba_disaster_distribution.csv (7315×31)
 | 不稳定斜坡 | 滑坡前期状态 |
 | 泥石流 | 与滑坡同降雨驱动机制，源自有滑坡堆积物 |
 
-**排除**: 崩塌(1689条) + 地面塌陷(4条) → 作为 V2 天然负样本来源
+**排除**: 崩塌(1689条) + 地面塌陷(4条) → 作为  天然负样本来源
 
 #### 1b. 删除字段
 
@@ -268,7 +267,7 @@ dataset/aba_disaster_distribution.csv (7315×31)
 
 ### 3. 特征工程
 
-**文件**: `pre_process/pipeline_v2.py`
+**文件**: `pre_process/pipeline.py`
 
 #### 易发性特征（27个，用于分类）
 
@@ -400,10 +399,10 @@ dataset/aba_disaster_distribution.csv (7315×31)
 
 ### 6. 模型训练与评估
 
-**文件**: `train_models_v2.py`
+**文件**: `train_models.py`
 
 ```
-加载数据 (V2 Pipeline)
+加载数据 ( Pipeline)
     │
     ▼
 ┌── 9个基模型 ──────────────────────────────────────────┐
@@ -443,13 +442,14 @@ dataset/aba_disaster_distribution.csv (7315×31)
     │
     ▼
 ┌── 输出 ────────────────────────────────────────────────┐
-│  results_v2/model_performance.csv  13+模型按F1排名      │
-│  results_v2/roc_curves.png         ROC曲线              │
-│  results_v2/pr_curves.png          PR曲线               │
-│  results_v2/shap_summary.png       SHAP特征重要性       │
-│  results_v2/shap_bar.png           SHAP柱状图           │
-│  results_v2/shap_importance.csv    SHAP值排序           │
-│  models_v2/*.pkl                   训练好的模型          │
+│  results/model_performance.csv    13+模型按F1排名       │
+│  results/roc_curves.png           ROC曲线               │
+│  results/pr_curves.png            PR曲线                │
+│  results/shap_summary.png         SHAP特征重要性        │
+│  results/shap_bar.png             SHAP柱状图            │
+│  results/shap_importance.csv      SHAP值排序            │
+│  models/*.pkl                     训练好的模型           │
+│  train_logs/*.md                  训练日志               │
 └──────────────────────────────────────────────────────┘
 ```
 
@@ -487,6 +487,29 @@ dataset/aba_disaster_distribution.csv (7315×31)
 • 阈值优化: 多目标搜索 (0.6×F1 + 0.4×特异性), 步长0.01
 ```
 
+### 独立训练脚本
+
+除 `train_models.py` 主入口外，项目还提供独立的单模型训练脚本，方便单独调试和对比：
+
+| 目录 | 包含模型 | 说明 |
+|:-----|:---------|:-----|
+| `ML_algorithms/` | 9个基模型各一个脚本 | 使用基础参数，快速训练 |
+| `improve_algorithms/` | Optuna调参版 + 4个集成模型 | 改进版，含贝叶斯优化 |
+
+#### 独立运行示例
+
+```bash
+# 单模型训练
+python ML_algorithms/train_xgboost.py
+python ML_algorithms/train_random_forest.py
+
+# Optuna调参版
+python improve_algorithms/train_imp_xgboost.py
+
+# 集成模型
+python improve_algorithms/train_stacking.py
+```
+
 ---
 
 ## 快速开始
@@ -504,35 +527,35 @@ pip install -r requirements.txt
 
 主要依赖：numpy, pandas, scikit-learn, xgboost, lightgbm, catboost, optuna, imbalanced-learn, shap, joblib, contextily
 
-### 运行 V2 完整训练
+### 运行  完整训练
 
 ```bash
-# 默认 1:1 正负样本比例（V2主流程）
-python train_models_v2.py
+# 默认 1:1 正负样本比例（主流程）
+python train_models.py
 
 # 自定义负样本比例（快速测试用 0.5）
-python train_models_v2.py --neg-ratio 0.5
+python train_models.py --neg-ratio 0.5
 
 # 三源混合负样本中真实数据占比
-python train_models_v2.py --hybrid-ratio 0.5
+python train_models.py --hybrid-ratio 0.5
 
 # 缓冲区距离（负样本距灾害点最小距离 km）
-python train_models_v2.py --buffer-dist 1.0
+python train_models.py --buffer-dist 1.0
 
 # 开启 Optuna 超参优化（对RF/XGB/LGB/CAT各跑30次）
-python train_models_v2.py --optuna-trials 30
+python train_models.py --optuna-trials 30
 
 # 使用 GPU 加速
-python train_models_v2.py --use-gpu
+python train_models.py --use-gpu
 
 # 综合命令：负样本1:1 + Optuna调参 + 默认混合
-python train_models_v2.py --neg-ratio 1.0 --optuna-trials 30
+python train_models.py --neg-ratio 1.0 --optuna-trials 30
 
 # 跳过 RF 质量检验
-python train_models_v2.py --no-quality-check
+python train_models.py --no-quality-check
 
 # 跳过 SHAP 分析
-python train_models_v2.py --no-shap
+python train_models.py --no-shap
 ```
 
 ### 危险性分级与风险制图
@@ -544,23 +567,42 @@ python train_models_v2.py --no-shap
 python hazard_mapping.py
 
 # 指定模型
-python hazard_mapping.py --model-path models_v2/xgboost.pkl
+python hazard_mapping.py --model-path models/xgboost.pkl
 
 # 用等距分级法（默认五分位数）
 python hazard_mapping.py --method equal
 ```
 
+### 数据增强训练
+
+```python
+from pre_process.data_augmentation import augment_training_data
+
+# SMOTE 过采样
+X_aug, y_aug = augment_training_data(X_train, y_train, method='smote')
+
+# 高斯噪声增强
+X_aug, y_aug = augment_training_data(X_train, y_train, method='noise')
+```
+
+### 特征重要性分析
+
+```bash
+python pre_process/feature_analysis.py
+```
+
 ### 输出文件
 
 ```
-results_v2/
+results/
 ├── model_performance.csv              # 模型性能排名（按F1排序）
 ├── roc_curves.png                     # ROC曲线对比
 ├── pr_curves.png                      # PR曲线对比
 ├── shap_summary.png                   # SHAP特征重要性
 ├── shap_bar.png                       # SHAP柱状图
 ├── shap_importance.csv                # SHAP值排序
-│
+
+results/                            # 危险性分级输出
 ├── susceptibility_distribution.png    # 易发性概率分布
 ├── hazard_classification.png          # 五级危险性空间分布
 ├── hazard_classification_basemap.png  # 带地形底图的危险性分布图
@@ -569,7 +611,7 @@ results_v2/
 ├── hazard_breakdown.csv               # 各等级统计汇总
 └── hazard_prediction_full.csv         # 全量预测数据
 
-models_v2/
+models/
 ├── xgboost.pkl
 ├── lightgbm.pkl
 ├── random_forest.pkl
@@ -579,6 +621,10 @@ models_v2/
 ├── voting.pkl
 ├── stacking.pkl
 ├── blending.pkl
+└── ...
+
+train_logs/                            # 训练日志（自动生成）
+├── train_log_20260617_143000.md
 └── ...
 ```
 
@@ -612,30 +658,56 @@ risk = y_prob * exposure_test['exposure_index'].values
 
 ```
 landslide_prediction/
-├── dataset/                                # 数据集
-│   ├── aba_disaster_distribution.csv       # 原始数据（7315×31，只读）
-│   ├── aba_disaster_processed.csv          # 处理后数据
-│   ├── simulated_landslide_large.csv       # 模拟数据（20000条）
-│   └── simulated_landslide_small.csv       # 模拟数据（2000条）
+├── dataset/                                # 数据集（只读）
+│   └── aba_disaster_distribution.csv       # 原始数据（7315×31）
 │
 ├── pre_process/                            # 预处理模块
 │   ├── __init__.py                         # 导出模块
-│   ├── pipeline_v2.py                      # V2核心特征工程
+│   ├── pipeline.py                         # 核心特征工程（27维易发性特征）
 │   ├── data_cleaning.py                    # 数据清洗
-│   ├── imputation.py                       # 缺失值插补
-│   └── negative_sampling.py                # 三源混合负样本生成
+│   ├── imputation.py                       # 缺失值插补（NDVI RF回归 + 降雨MICE）
+│   ├── negative_sampling.py                # 三源混合负样本生成
+│   ├── preprocess.py                       # 旧版预处理（兼容）
+│   ├── data_augmentation.py                # 数据增强（SMOTE/噪声）
+│   └── feature_analysis.py                 # CatBoost特征重要性分析
 │
-├── train_models_v2.py                      # V2训练入口
+├── ML_algorithms/                          # 单模型训练脚本
+│   ├── __init__.py
+│   ├── train_xgboost.py
+│   ├── train_lightgbm.py
+│   ├── train_catboost.py
+│   ├── train_random_forest.py
+│   ├── train_decision_tree.py
+│   ├── train_logistic_regression.py
+│   ├── train_svm.py
+│   ├── train_knn.py
+│   └── train_gboost.py
+│
+├── improve_algorithms/                     # 改进版模型训练脚本
+│   ├── __init__.py
+│   ├── train_imp_xgboost.py               # Optuna贝叶斯调参
+│   ├── train_imp_lightgbm.py
+│   ├── train_imp_catboost.py
+│   ├── train_ensemble_avg.py               # 加权平均集成
+│   ├── train_voting.py                     # 软投票集成
+│   ├── train_stacking.py                   # Stacking集成
+│   └── train_blending.py                   # Blending集成
+│
+├── train_models.py                         # 训练主入口
 ├── hazard_mapping.py                       # 危险性分级与风险分析
-├── visualisation.py                        # 可视化模块
+├── train_logs.py                           # 训练日志生成器
+├── visualisation.py                        # 可视化模块（ROC/PR/KS/增益曲线）
 │
-├── models_v2/                              # 模型输出（自动创建）
-├── results_v2/                             # 结果输出（自动创建）
+├── models/                                 # 模型输出（自动创建）
+├── results/                                # 训练结果输出（自动创建）
+├── results/                             # 危险性分级输出（自动创建）
+├── train_logs/                             # 训练日志输出（自动创建）
 │
 ├── requirements.txt                        # 依赖
 ├── README.md
-├── CLAUDE.md                               # 项目指令
-└── 项目整体实现流程.md                      # 架构说明
+├── CLAUDE.md                               # 项目指令与编码规范
+└── docs/                                   # 文档目录
+    └── 特征工程分析.md                      # 特征工程详细分析
 ```
 
 ---
@@ -652,13 +724,13 @@ landslide_prediction/
 | **AUC-ROC** | ROC曲线下面积 | 整体排序质量 |
 | **AUC-PR** | PR曲线下面积 | 适合不平衡数据 |
 
-> **排序指标**（V2）：所有模型按 **F1值** 排序（兼顾精确率和召回率）。
+> **排序指标**（）：所有模型按 **F1值** 排序（兼顾精确率和召回率）。
 
 ---
 
 ## Optuna 超参优化
 
-`train_models_v2.py` 集成了 Optuna 贝叶斯超参优化，支持对4个主要模型进行自动调参。
+`train_models.py` 集成了 Optuna 贝叶斯超参优化，支持对4个主要模型进行自动调参。
 
 ### 优化目标
 
@@ -673,10 +745,10 @@ landslide_prediction/
 
 ```bash
 # 每个模型30次调参（约10-15分钟）
-python train_models_v2.py --optuna-trials 30
+python train_models.py --optuna-trials 30
 
 # 每个模型50次（更充分，约20-30分钟）
-python train_models_v2.py --optuna-trials 50
+python train_models.py --optuna-trials 50
 ```
 
 ### 输出
@@ -688,7 +760,7 @@ Optuna 调参 lightgbm (30 次)...     最佳F1=0.9915
 Optuna 调参 catboost (30 次)...     最佳F1=0.9918
 ```
 
-调优后的模型自动保存为 `models_v2/{name}_tuned.pkl`，并参与最终排名。
+调优后的模型自动保存为 `models/{name}_tuned.pkl`，并参与最终排名。
 
 ---
 
@@ -731,6 +803,22 @@ Optuna 调参 catboost (30 次)...     最佳F1=0.9918
 
 ---
 
+## 训练日志
+
+每次运行 `train_models.py` 后，自动在 `train_logs/` 目录生成 Markdown 格式的训练日志，包含：
+
+- **训练基本信息**：Pipeline版本、训练时长、配置参数、数据分布
+- **模型性能对比**：按F1值排序的完整排名表（Markdown表格）
+- **各模型详细指标**：F1、AUC、PR、召回率、精确率、特异性、阈值
+- **SHAP特征重要性分析摘要**：Top 5重要特征
+- **概率校准信息**：参与校准的模型列表
+
+```bash
+# 日志文件示例
+train_logs/
+└── train_log_20260617_143000.md
+```
+
 ---
 
 ## 注意事项
@@ -747,6 +835,8 @@ Optuna 调参 catboost (30 次)...     最佳F1=0.9918
 
 6. **dataset/ 目录禁止修改**：原始数据文件是只读的，数据增强仅在训练时作用于内存。
 
+7. **编码规范**：所有 Python 文件遵循项目 `CLAUDE.md` 中的编码规范（注释格式、中文字体配置、输出格式等）。
+
 ---
 
 ## 引用说明
@@ -754,8 +844,8 @@ Optuna 调参 catboost (30 次)...     最佳F1=0.9918
 若使用本项目的代码或方法，请引用：
 
 ```bibtex
-@software{landslide_prediction_v2,
-  title = {阿坝州降雨诱发滑坡易发性评价 - Pipeline V2},
+@software{landslide_prediction,
+  title = {阿坝州降雨诱发滑坡易发性评价 - Pipeline },
   author = {Deng Shuanglin},
   year = {2026},
   description = {基于三源混合负样本生成和二阶段易发性-暴露度分离的滑坡易发性机器学习评价}
@@ -764,4 +854,4 @@ Optuna 调参 catboost (30 次)...     最佳F1=0.9918
 
 ---
 
-> 本文档覆盖项目 V2 完整流程。
+> 本文档覆盖项目  完整流程。
